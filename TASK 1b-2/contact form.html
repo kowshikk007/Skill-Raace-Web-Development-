@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      h2{
+        color: antiquewhite;
+      }
+        body {
+            background: linear-gradient(to right, #d510b8, #2975f9);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .custom-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .custom-form .form-control:invalid {
+            border-color: #dc3545;
+        }
+        .custom-form .form-control:valid {
+            border-color: #28a745;
+        }
+        .custom-form .btn-custom {
+            background-color: #6c9ed3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>Contact Form</h2>
+        </div>
+        <form class="custom-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
