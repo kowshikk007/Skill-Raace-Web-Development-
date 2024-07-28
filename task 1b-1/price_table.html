@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(184,110,131,1) 51%, rgba(252,176,69,1) 100%);
+        }
+        .pricing-table {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-table thead {
+            background-color: #c938e9;
+            color: white;
+        }
+        .pricing-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <table class="table table-hover pricing-table">
+        <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>$10/month</td>
+                <td>Feature 1, Feature 2</td>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>$20/month</td>
+                <td>Feature 1, Feature 2, Feature 3</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$30/month</td>
+                <td>Feature 1, Feature 2, Feature 3, Feature 4</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
